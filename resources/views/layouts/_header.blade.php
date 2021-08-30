@@ -24,13 +24,13 @@
 </head>
 <body>
     <header>
-        @include('site.layouts._navbar')
+        @include('layouts._navbar')
     </header>
 
     @yield('content')
 
     <footer>
-        @include('site.layouts._footer')
+        @include('layouts._footer')
     </footer>
 
     <script src="{{ asset('js/app.js') }}"></script>

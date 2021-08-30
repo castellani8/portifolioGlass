@@ -1,4 +1,4 @@
-@extends('site.layouts._header')
+@extends('layouts._header')
 @section('content')
 
     <div class="container">

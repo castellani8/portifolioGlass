@@ -1,4 +1,4 @@
-@extends('site.layouts._header')
+@extends('layouts._header')
 @section('content')
 
 
@@ -21,8 +21,8 @@
                     <img class="mt-3" src="{{ asset('/img/navbarclaro.png') }}" alt="" style="width:250px">
                 </div>
                 <div class="col-lg-9">
-                    <h3>O QUE FAZEMOS?</h1>
-                        <p class="lead">Especializados em soluções de tecnologia para qualquer tipo de negócio,
+                    <h3>O QUE EU FAÇO?</h1>
+                        <p class="lead">Especializado em soluções de tecnologia para qualquer tipo de negócio,
                             meu objetivo é prestar o melhor serviço para sua empresa como funcionário PJ, sou especializado
                             em desenvolver soluções com boas práticas e que sejam agradáveis para seu usuário! Seja por
                             demanda de documentações ou para criação de novos sistemas.</p>

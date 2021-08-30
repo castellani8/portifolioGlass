@@ -1,4 +1,4 @@
-@extends('site.layouts._header')
+@extends('layouts._header')
 @section('content')
 
     <div class="container text-center">
@@ -66,7 +66,7 @@
         <div class="row text-center">
             <div class="col-lg-4">
                 <div class="card my-2">
-                    <img class="card-img-top" src="{{ asset('/img/land1200x780.jpg" alt="">
+                    <img class="card-img-top" src="{{ asset('/img/land1200x780.jpg') }}" alt="">
                     <div class="card-body">
                         <h5 class="card-title text-center" style="color:orange">Claro</h5>
                         <p class="card-text">Landpage para captação de leads feita para claro, esse modelo tem uma alta
@@ -83,7 +83,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card my-2">
-                    <img class="card-img-top" src="{{ asset('/img/landpage2.jpg" alt="" style="max-height:20%;">
+                    <img class="card-img-top" src="{{ asset('/img/landpage2.jpg') }}" alt="" style="max-height:20%;">
                     <div class="card-body">
                         <h5 class="card-title text-center" style="color:orange">Landpage para advocacia</h5>
                         <p class="card-text">Landpage voltada para firma de advocacia, a mesma se encontra na página
@@ -100,7 +100,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card my-2">
-                    <img class="card-img-top" src="{{ asset('/img/land13.jpg" alt="">
+                    <img class="card-img-top" src="{{ asset('/img/land13.jpg') }}" alt="">
                     <div class="card-body">
                         <h5 class="card-title text-center" style="color:orange">Landpage para jóias</h5>
                         <p class="card-text">Captação de leads para vendas, sistema de email marketing com promoções e
