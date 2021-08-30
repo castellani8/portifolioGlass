@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site.index');
-});
+Route::get('/', [\App\Http\Controllers\SiteController::class, 'index'])->name('index');
+Route::get('/quemSomos', [\App\Http\Controllers\SiteController::class, 'quemSomos'])->name('quemSomos');
+Route::get('/faleConosco', [\App\Http\Controllers\SiteController::class, 'faleConosco'])->name('faleConosco');
+Route::get('/projetos', [\App\Http\Controllers\SiteController::class, 'projetos'])->name('projetos');
+
+Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
 
 Route::group(['middleware' => 'auth'], function() {
 
@@ -23,4 +26,3 @@ Route::group(['middleware' => 'auth'], function() {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
