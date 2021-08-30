@@ -48,7 +48,7 @@ require __DIR__ . "/Source/autoload.php";
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <img class="mt-3" src="/Source/img/navbarclaro.png" alt="" style="width:250px">
+                    <img class="mt-3" src="{{ url('/img/navbarclaro.png') }}" alt="" style="width:250px">
                 </div>
                 <div class="col-lg-9">
                     <h3>O QUE FAZEMOS?</h1>
