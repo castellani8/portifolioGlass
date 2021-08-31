@@ -13,4 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
+    .js('resources/js/dashboard/imagePreview.js', 'public/js/dashboard')
+    .postCss('resources/css/dashboard/styles.css', 'public/css/dashboard')
     .sourceMaps();

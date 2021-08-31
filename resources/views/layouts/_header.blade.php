@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/site/styles.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="{{ asset('css/dashboard/styles.css') }}">
     <title>Document</title>
 </head>
 <body>
@@ -35,6 +35,8 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/site/scripts.js') }}"></script>
+    <script src="{{ asset('js/dashboard/imagePreview.js') }}"></script>
+
 </body>
 </html>
 

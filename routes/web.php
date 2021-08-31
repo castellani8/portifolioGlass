@@ -22,6 +22,8 @@ Route::get('/login', [\App\Http\Controllers\HomeController::class, 'index'])->na
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('painel', [\App\Http\Controllers\DashboardController::class, 'index'])->name('painel.index');
+    Route::get('painel/profile/{id?}', [\App\Http\Controllers\DashboardController::class, 'profile'])->name('painel.profile');
+    
     Route::resource('project', \App\Http\Controllers\ProjectController::class);
     Route::resource('profile', \App\Http\Controllers\ProfileController::class);
 });

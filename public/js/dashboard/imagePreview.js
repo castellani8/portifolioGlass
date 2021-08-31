@@ -1,0 +1,32 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/dashboard/imagePreview.js":
+/*!************************************************!*\
+  !*** ./resources/js/dashboard/imagePreview.js ***!
+  \************************************************/
+/***/ (() => {
+
+eval("$(\".imgAdd\").click(function () {\n  $(this).closest(\".row\").find('.imgAdd').before('<div class=\"col-sm-2 imgUp\"><div class=\"imagePreview\"></div><label class=\"btn btn-primary\">Upload<input type=\"file\" class=\"uploadFile img\" value=\"Upload Photo\" style=\"width:0px;height:0px;overflow:hidden;\"></label><i class=\"fa fa-times del\"></i></div>');\n});\n$(document).on(\"click\", \"i.del\", function () {\n  $(this).parent().remove();\n});\n$(function () {\n  $(document).on(\"change\", \".uploadFile\", function () {\n    var uploadFile = $(this);\n    var files = !!this.files ? this.files : [];\n    if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support\n\n    if (/^image/.test(files[0].type)) {\n      // only image file\n      var reader = new FileReader(); // instance of the FileReader\n\n      reader.readAsDataURL(files[0]); // read the local file\n\n      reader.onloadend = function () {\n        // set image data as background of div\n        //alert(uploadFile.closest(\".upimage\").find('.imagePreview').length);\n        uploadFile.closest(\".imgUp\").find('.imagePreview').css(\"background-image\", \"url(\" + this.result + \")\");\n      };\n    }\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvZGFzaGJvYXJkL2ltYWdlUHJldmlldy5qcz9hNmQwIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImNsb3Nlc3QiLCJmaW5kIiwiYmVmb3JlIiwiZG9jdW1lbnQiLCJvbiIsInBhcmVudCIsInJlbW92ZSIsInVwbG9hZEZpbGUiLCJmaWxlcyIsImxlbmd0aCIsIndpbmRvdyIsIkZpbGVSZWFkZXIiLCJ0ZXN0IiwidHlwZSIsInJlYWRlciIsInJlYWRBc0RhdGFVUkwiLCJvbmxvYWRlbmQiLCJjc3MiLCJyZXN1bHQiXSwibWFwcGluZ3MiOiJBQUFBQSxDQUFDLENBQUMsU0FBRCxDQUFELENBQWFDLEtBQWIsQ0FBbUIsWUFBVTtBQUN6QkQsRUFBQUEsQ0FBQyxDQUFDLElBQUQsQ0FBRCxDQUFRRSxPQUFSLENBQWdCLE1BQWhCLEVBQXdCQyxJQUF4QixDQUE2QixTQUE3QixFQUF3Q0MsTUFBeEMsQ0FBK0MsNlBBQS9DO0FBQ0QsQ0FGSDtBQUdFSixDQUFDLENBQUNLLFFBQUQsQ0FBRCxDQUFZQyxFQUFaLENBQWUsT0FBZixFQUF3QixPQUF4QixFQUFrQyxZQUFXO0FBQ3pDTixFQUFBQSxDQUFDLENBQUMsSUFBRCxDQUFELENBQVFPLE1BQVIsR0FBaUJDLE1BQWpCO0FBQ0gsQ0FGRDtBQUdBUixDQUFDLENBQUMsWUFBVztBQUNUQSxFQUFBQSxDQUFDLENBQUNLLFFBQUQsQ0FBRCxDQUFZQyxFQUFaLENBQWUsUUFBZixFQUF3QixhQUF4QixFQUF1QyxZQUN2QztBQUNRLFFBQUlHLFVBQVUsR0FBR1QsQ0FBQyxDQUFDLElBQUQsQ0FBbEI7QUFDSixRQUFJVSxLQUFLLEdBQUcsQ0FBQyxDQUFDLEtBQUtBLEtBQVAsR0FBZSxLQUFLQSxLQUFwQixHQUE0QixFQUF4QztBQUNBLFFBQUksQ0FBQ0EsS0FBSyxDQUFDQyxNQUFQLElBQWlCLENBQUNDLE1BQU0sQ0FBQ0MsVUFBN0IsRUFBeUMsT0FIN0MsQ0FHcUQ7O0FBRWpELFFBQUksU0FBU0MsSUFBVCxDQUFlSixLQUFLLENBQUMsQ0FBRCxDQUFMLENBQVNLLElBQXhCLENBQUosRUFBa0M7QUFBRTtBQUNoQyxVQUFJQyxNQUFNLEdBQUcsSUFBSUgsVUFBSixFQUFiLENBRDhCLENBQ0M7O0FBQy9CRyxNQUFBQSxNQUFNLENBQUNDLGFBQVAsQ0FBcUJQLEtBQUssQ0FBQyxDQUFELENBQTFCLEVBRjhCLENBRUU7O0FBRWhDTSxNQUFBQSxNQUFNLENBQUNFLFNBQVAsR0FBbUIsWUFBVTtBQUFFO0FBQzNCO0FBQ2hCVCxRQUFBQSxVQUFVLENBQUNQLE9BQVgsQ0FBbUIsUUFBbkIsRUFBNkJDLElBQTdCLENBQWtDLGVBQWxDLEVBQW1EZ0IsR0FBbkQsQ0FBdUQsa0JBQXZELEVBQTJFLFNBQU8sS0FBS0MsTUFBWixHQUFtQixHQUE5RjtBQUNhLE9BSEQ7QUFJSDtBQUVKLEdBaEJEO0FBaUJILENBbEJBLENBQUQiLCJzb3VyY2VzQ29udGVudCI6WyIkKFwiLmltZ0FkZFwiKS5jbGljayhmdW5jdGlvbigpe1xyXG4gICAgJCh0aGlzKS5jbG9zZXN0KFwiLnJvd1wiKS5maW5kKCcuaW1nQWRkJykuYmVmb3JlKCc8ZGl2IGNsYXNzPVwiY29sLXNtLTIgaW1nVXBcIj48ZGl2IGNsYXNzPVwiaW1hZ2VQcmV2aWV3XCI+PC9kaXY+PGxhYmVsIGNsYXNzPVwiYnRuIGJ0bi1wcmltYXJ5XCI+VXBsb2FkPGlucHV0IHR5cGU9XCJmaWxlXCIgY2xhc3M9XCJ1cGxvYWRGaWxlIGltZ1wiIHZhbHVlPVwiVXBsb2FkIFBob3RvXCIgc3R5bGU9XCJ3aWR0aDowcHg7aGVpZ2h0OjBweDtvdmVyZmxvdzpoaWRkZW47XCI+PC9sYWJlbD48aSBjbGFzcz1cImZhIGZhLXRpbWVzIGRlbFwiPjwvaT48L2Rpdj4nKTtcclxuICB9KTtcclxuICAkKGRvY3VtZW50KS5vbihcImNsaWNrXCIsIFwiaS5kZWxcIiAsIGZ1bmN0aW9uKCkge1xyXG4gICAgICAkKHRoaXMpLnBhcmVudCgpLnJlbW92ZSgpO1xyXG4gIH0pO1xyXG4gICQoZnVuY3Rpb24oKSB7XHJcbiAgICAgICQoZG9jdW1lbnQpLm9uKFwiY2hhbmdlXCIsXCIudXBsb2FkRmlsZVwiLCBmdW5jdGlvbigpXHJcbiAgICAgIHtcclxuICAgICAgICAgICAgICB2YXIgdXBsb2FkRmlsZSA9ICQodGhpcyk7XHJcbiAgICAgICAgICB2YXIgZmlsZXMgPSAhIXRoaXMuZmlsZXMgPyB0aGlzLmZpbGVzIDogW107XHJcbiAgICAgICAgICBpZiAoIWZpbGVzLmxlbmd0aCB8fCAhd2luZG93LkZpbGVSZWFkZXIpIHJldHVybjsgLy8gbm8gZmlsZSBzZWxlY3RlZCwgb3Igbm8gRmlsZVJlYWRlciBzdXBwb3J0XHJcbiAgIFxyXG4gICAgICAgICAgaWYgKC9eaW1hZ2UvLnRlc3QoIGZpbGVzWzBdLnR5cGUpKXsgLy8gb25seSBpbWFnZSBmaWxlXHJcbiAgICAgICAgICAgICAgdmFyIHJlYWRlciA9IG5ldyBGaWxlUmVhZGVyKCk7IC8vIGluc3RhbmNlIG9mIHRoZSBGaWxlUmVhZGVyXHJcbiAgICAgICAgICAgICAgcmVhZGVyLnJlYWRBc0RhdGFVUkwoZmlsZXNbMF0pOyAvLyByZWFkIHRoZSBsb2NhbCBmaWxlXHJcbiAgIFxyXG4gICAgICAgICAgICAgIHJlYWRlci5vbmxvYWRlbmQgPSBmdW5jdGlvbigpeyAvLyBzZXQgaW1hZ2UgZGF0YSBhcyBiYWNrZ3JvdW5kIG9mIGRpdlxyXG4gICAgICAgICAgICAgICAgICAvL2FsZXJ0KHVwbG9hZEZpbGUuY2xvc2VzdChcIi51cGltYWdlXCIpLmZpbmQoJy5pbWFnZVByZXZpZXcnKS5sZW5ndGgpO1xyXG4gIHVwbG9hZEZpbGUuY2xvc2VzdChcIi5pbWdVcFwiKS5maW5kKCcuaW1hZ2VQcmV2aWV3JykuY3NzKFwiYmFja2dyb3VuZC1pbWFnZVwiLCBcInVybChcIit0aGlzLnJlc3VsdCtcIilcIik7XHJcbiAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgfVxyXG4gICAgICAgIFxyXG4gICAgICB9KTtcclxuICB9KTsiXSwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL2Rhc2hib2FyZC9pbWFnZVByZXZpZXcuanMuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/js/dashboard/imagePreview.js\n");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./resources/js/dashboard/imagePreview.js"]();
+/******/ 	
+/******/ })()
+;
