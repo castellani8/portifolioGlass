@@ -23,6 +23,20 @@
                 <li class='nav-item'>
                     <a class='nav-link letter-g' href="{{ route('faleConosco') }}">Fale Conosco</a>
                 </li>
+                <div class='divider-vertical d-lg-block d-none my-auto'></div>
+                @if(auth()->check())
+                    <li class='nav-item'>
+                        <a class='nav-link letter-g' href="{{ route('painel.index') }}"> Olá {{ auth()->user()->name }} !</a>
+                    </li>
+                @else
+                    <li class='nav-item'>
+                        <a class='nav-link letter-g' href="{{ route('painel.index') }}">Login</a>
+                    </li>
+                    <div class='divider-vertical d-lg-block d-none my-auto'></div>
+                    <li class='nav-item'>
+                        <a class='nav-link letter-g' href="{{ route('register') }}">Registrar</a>
+                    </li>
+                @endif
             </ul>
         </div>
     </div>

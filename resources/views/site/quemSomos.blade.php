@@ -1,270 +1,220 @@
 @extends('layouts._header')
 @section('content')
 
-    <div class="container">
-        <h1 class="mt-4">Quem somos?</h1>
-        <hr class="ml-auto" style="color:black;background-color:black;width:100%;">
-        <div class="row">
-            <div class="col-lg-3"><img src="{{ asset('/img/lucas.jpg') }}"
-                    alt="lucas de souza castellani ceo da ipnex e glass tecnologias" style="width:100%"></div>
-            <div class="col-lg-9">A GLASS Tecnologias foi fundadada em 2021, visando trazer a solução para modelos de
-                negócios que estão estagnados, ou que tem a necessidade de expandir na área de TI e de marketing através de
-                parcerias, preços acessíveis e aprendizados. Nosso diretor Lucas de Souza Castellani trouxe vida a uma idéia
-                de criar um grupo de empresas unido, cujo o objetivo é sempre ajudar um ao outro na medida do possível, e
-                compartilhar conhecimentos diversos sobre negócios, tecnologias, marketing e entre outros nichos.<br>
-                <br>
-                Lucas S. Castellani é um desenvolvedor Fullstack PHP autodidata, dono de uma agência de marketing digital
-                chamada IPNEX, palestrante de assuntos voltados a tecnologia, fundador do grupo Enterprise Assistant o qual
-                pertence a GLASS Tecnologias e acima de tudo com princípios cristãos.
+
+    <div class="container-fluid header" style="background-image: url('{{ url('/img/background2.png') }}');">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="h1-copy">Procura por um desenvolvedor web backend profissional? </h1>
+                <hr class="fhr">
+                <h2 class="title">Conheça a GLASS Soluções em Tecnologias, fundada por Lucas S. Castellani!</h2>
+            </div>
+            <div class="col-md-6">
+
             </div>
         </div>
-        <h1 class="mt-4">GLASS - O que fazemos?</h1>
-        <hr class="ml-auto" style="color:black;background-color:black;width:100%;">
-        <p class="pQuemSomos">Temos como objetivo trazer solucões em tecnologia para o desenvolvimento do seu negócio por
-            meio da tecnologia, do marketing, da acessibidade e do networking. Queremos abrir as portas para novas empresas
-            que estão crescendo agora oferecendo um preço baixo com um trabalho de qualidade, e atender as que já estão no
-            mercado querendo expandir na área de tecnologia, tudo isso para gerar valor para nossos clientes e acompanhar o
-            processo de crescimento da sua empresa de perto.<br>
+    </div>
+    <div class="jumbotron jumbotron-fluid p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="mt-3" src="{{ asset('/img/navbarclaro.png') }}" alt="" style="width:250px">
+                </div>
+                <div class="col-lg-9">
+                    <h3>O QUE EU FAÇO?</h1>
+                        <p class="lead">Especializado em soluções de tecnologia para qualquer tipo de negócio,
+                            meu objetivo é prestar o melhor serviço para sua empresa como funcionário PJ, sou especializado
+                            em desenvolver soluções com boas práticas e que sejam agradáveis para seu usuário! Seja por
+                            demanda de documentações ou para criação de novos sistemas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-3">
+        <div class="row justify-content-center text-center">
+            <h2>Tecnologias mais usadas por mim:</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 my-4">
+                <i class="fab fa-php fa-5x" style="color:#474A8A"></i>
+                <i class="fab fa-laravel fa-5x" style="color:red"></i><br>
+                <h6 style="font-weight:bold;">PHP/Laravel</h6>
+                <h6 class="mt-1">Ultilizamos a linguagem de programação mais usada pelos gigantes da internet: o
+                    PHP, que juntamente com seu framework mais usado, o Laravel, se tornam a melhor opção em tecnologia para
+                    desenvolvimento back-end em geral, atendendo a qualquer requisito.</h6>
+            </div>
+            <div class="col-md-4 my-4">
+                <i class="fab fa-js fa-4x" style="color:yellow"></i>
+                <i class="fab fa-html5 fa-5x" style="color:orange"></i>
+                <i class="fab fa-css3-alt fa-4x" style="color:blue"></i><br>
+                <h6 style="font-weight:bold;">JavaScript/HTML5/CSS3</h6>
+                <h6 class="mt-1">As tecnologias mais requisitadas no mercado hoje são: HTML5, JavaScript e Css.
+                    Tais tecnologias tem um uso imprescindível na criação de sites e programas, pois são eles os
+                    responsáveis por toda estruturação de como o seu usuário interage com o seu ambiente.</h6>
+            </div>
+            <div class="col-md-4 my-4">
+                <i class="fas fa-palette fa-5x" style="color:orange"></i><br>
+                <h6 style="font-weight:bold;">Web Design UI/UX </h6>
+                <h6 class="mt-1">A parte que uso para encontrar o melhor visual para seu site/sistema. É usado
+                    para deixar seu usuário confortável e para criar uma comunicação que cative o cliente, dando
+                    credibilidade e atraindo novos clientes.</h6>
+            </div>
+
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 my-4">
+                <i class="fab fa-bootstrap fa-4x" style="color:#7a257a "></i><br>
+                <h6 style="font-weight:bold;">Bootstrap</h6>
+                <h6 class="mt-1">Um framework que facilita muito o trabalho front-end, e nos possibilita trabalhar
+                    com padrões de grid, também trabalho com outros frameworks como Tailwind.</h6>
+            </div>
+            <div class="col-md-4 my-4">
+                <img src="{{ asset('/img/mysql.png') }}" style="width: 20%">
+                <h6 class="mt-1">O MySQL é simplesmente o sistema mais popular para armazenar e gerenciar dados
+                    com segurança, sempre que começo uma aplicação do zero opto por utilizá-lo, mas já trabalhei com
+                    diversos outros.</h6>
+            </div>
+            <div class="col-md-4 my-4">
+                <i class="fab fa-digital-ocean fa-4x" style="color:blue"></i><br>
+                <h6 style="font-weight:bold;">Digital Ocean</h6>
+                <h6 class="mt-1">A Digital Ocean é a plataforma de servidores da Amazon, atualmente é a mais
+                    avançada disponível no mercado em quesito de tecnologia e segurança, podendo ser ultilizada juntamente
+                    com sistema Ubuntu.</h6>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+
+    <div class="container-fluid mt-1">
+
+        <div class="row bg-dark">
+            <div class="col-md-6 bordado my-auto text-light">
+                <h2 class="text-center my-2 text-light">Como posso te ajudar?</h2>
+                <h5 id="text-center-mobile">Eu crio sites e sistemas de maneira 100% profissional para seu negócio,
+                    indepentende do ramo. Tenho alta experiência com solucionamento de quaisquer problemas que sua empresa
+                    esteja enfrentando, além de estudar e implantar novas funcionalidades, criando e desenvolvendo soluções
+                    em tecnologia planejadas baseada em documentações ou sprints.</h5>
+                <br>
+                <h5 class="text-center">Veja alguns exemplos de tecnologias desenvolvidas:</h5>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video id="video" class="d-block w-100" src="{{ asset('video/video1.mp4') }}" muted autoplay
+                                playsinline />
+                        </div>
+                        <div class="carousel-item">
+                            <video id="video" class="d-block w-100" src="{{ asset('video/video2.mp4') }}" muted autoplay
+                                playsinline />
+                        </div>
+                        <div class="carousel-item">
+                            <video id="video" class="d-block w-100" src="{{ asset('video/video3.mp4') }}" muted=""
+                                autoplay="" playsinline />
+                            </video>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
             <br>
-            Nossas conexões tem como prioridade criar vínculos para que tenhamos cada vez mais benefícios para nossos
-            parceiros, como preços baixos, oportunidades de mercado e o aumento de integrantes em nosso grupo de empresas.
-            Os principais serviços que a GLASS oferece são sites e sistemas para seu negócio de acordo com a sua
-            necessidade, somos especializados em criação de softwares para aumento de produtividade em qualquer nicho.
-        </p>
-        <h1 class="mt-4">O que é Enterprise Assistant?</h1>
-        <hr class="ml-auto" style="color:black;background-color:black;width:100%;">
-        <p class="pQuemSomos">O grupo Enterprise Assistant é um grupo de empresas de vários nichos onde o objetivo é
-            ajudar um ao outro, temos várias oportunidades para que seu negócio tenha o melhor desempenho, oferecemos
-            benefícios para todos aqueles que são membros, além de promoções em várias empresas parceiras, conteúdo gratuito
-            sobre diversos nichos, consulta de escalamento de negócios gratuita e até oportunidade de criação de novos
-            negócios. Para você que deseja se tornar membro, fique por dentro dos benefícios:<br>
-            <br>
-            &nbsp&nbsp&nbsp&nbsp&bull;&nbsp 50% de desconto em todos os produtos e serviços da Enterprise Assistant (Entre
-            em contato para saber mais);<br>
-            &nbsp&nbsp&nbsp&nbsp&bull;&nbsp Uma consulta semanal gratuita sobre escalamento para seu negócio com nosso
-            diretor Lucas Castellani;<br>
-            &nbsp&nbsp&nbsp&nbsp&bull;&nbsp Promoções em produtos e serviços de empresas parceiras;<br>
-            &nbsp&nbsp&nbsp&nbsp&bull;&nbsp Acesso gratuito a palestras mensais sobre tecnologia nos negócios;<br>
-            &nbsp&nbsp&nbsp&nbsp&bull;&nbsp Acesso ao grupo exclusivo de Networking;<br>
-            &nbsp&nbsp&nbsp&nbsp&bull;&nbsp Oportunidade de se tornar um dos nossos sócios;<br>
-            &nbsp&nbsp&nbsp&nbsp&bull;&nbsp Acesso a um material exclusivo para membros;<br>
-            <br>
-            Venha você também fazer parte desse grupo, sabemos que também tem muito a acrescentar! aceitamos todos os tipos
-            de pessoas e negócios, sempre extendendo a mão para o próximo e compartilhando conhecimento em um só propósito,
-            mudança.
-        </p>
-        <h1 class="mt-4">Nossos princípios:</h1>
-        <hr class="ml-auto" style="color:black;background-color:black;width:100%;">
-        <p class="pQuemSomos">Somos uma grupo de empresas com princípios cristãos, acreditamos em ajudar o próximo e
-            também em ser ajudado, nossos objetivos incluem poder dar a mão a pessoas que estão em necessidade, por isso,
-            10% de toda arrecadação de lucros será usada para comprar cestas básicas, ajudar pessoas necessitadas e criar
-            movimentos.<br>
-            <br>
-            Se você estiver passando por um momento difícil em sua vida, lembre-se de que Deus é maior que tudo, e que na
-            Enterprise Assistant, ou na GLASS, você tem mais do que amigos, você tem irmãos.
-        </p>
-        <h1 class="mt-4">Política de Privacidade:</h1>
-        <hr class="ml-auto" style="color:black;background-color:black;width:100%;">
-        <p class="pQuemSomos">Na GLASS Tecnologias, privacidade e segurança são prioridades e nos comprometemos com a
-            transparência do tratamento de dados pessoais dos nossos parcerias. Por isso, esta presente Política de
-            Privacidade estabelece como é feita a coleta, uso e transferência de informações de clientes ou outras pessoas
-            que acessam ou usam nosso site.<br>
-            <br>
-            Ao utilizar nossos serviços, você entende que coletaremos e usaremos suas informações pessoais nas formas
-            descritas nesta Política, sob as normas de Proteção de Dados (LGPD, Lei Federal 13.709/2018), das disposições
-            consumeristas da Lei Federal 8078/1990 e as demais normas do ordenamento jurídico brasileiro aplicáveis.<br>
-            <br>
-            Dessa forma, a GLASS Tecnologias, doravante denominada simplesmente como GLASS, inscrita no CNPJ/MF sob o nº
-            38.432.208/0001-52, no papel de Controladora de Dados, obriga-se ao disposto na presente Política de
-            Privacidade.<br>
-            <br>
-        <h4 class="mt-2">1. Quais dados coletamos sobre você e para qual finalidade?</h4>
-        <p class="pQuemSomos">Nosso site coleta e utiliza alguns dados pessoais seus, de forma a viabilizar a prestação
-            de serviços e aprimorar a experiência de uso.</p>
-        <h4 class="mt-2">1.1. Dados pessoais fornecidos pelo titular (caso solicitado):</h4>
-        <p class="pQuemSomos">
-            &bull; Nome completo;<br>
-            &bull; Email;<br>
-            &bull; Endereço;<br>
-            &bull; Número para contato;<br>
-            &bull; CPF;<br>
-            &bull; Data de nascimento;<br>
-        <h4 class="mt-2">2. Como coletamos os seus dados?</h4>
-        &bull; Através de criação de contas;<br>
-        &bull; Solicitações de prestação de serviços;<br>
-        &bull; Cadastro de membros;<br>
-        <h4 class="mt-2">2.1. Consentimento</h4>
-        É a partir do seu consentimento que tratamos os seus dados pessoais. O consentimento é a manifestação livre,
-        informada e inequívoca pela qual você autoriza a GLASS a tratar seus dados.<br>
-        <br>
-        Assim, em consonância com a Lei Geral de Proteção de Dados, seus dados só serão coletados, tratados e armazenados
-        mediante prévio e expresso consentimento. <br>
-        <br>
-        O seu consentimento será obtido de forma específica para cada finalidade acima descrita, evidenciando o compromisso
-        de transparência e boa-fé da GLASS para com seus usuários/clientes, seguindo as regulações legislativas
-        pertinentes.<br>
-        <br>
-        Ao utilizar os serviços da GLASS e fornecer seus dados pessoais, você está ciente e consentindo com as disposições
-        desta Política de Privacidade, além de conhecer seus direitos e como exercê-los.<br>
-        <br>
-        A qualquer tempo e sem nenhum custo, você poderá revogar seu consentimento.<br>
-        <br>
-        É importante destacar que a revogação do consentimento para o tratamento dos dados pode implicar a impossibilidade
-        da performance adequada de alguma funcionalidade do site que dependa da operação. Tais consequências serão
-        informadas previamente.
-        <h4 class="mt-2">3. Quais são os seus direitos?</h4>
-        A GLASS assegura a seus usuários/clientes seus direitos de titular previstos no artigo 18 da Lei Geral de Proteção
-        de Dados. Dessa forma, você pode, de maneira gratuita e a qualquer tempo:<br><br>
-        &bull; Confirmar a existência de tratamento de dados, de maneira simplificada ou em formato claro e
-        completo.<br><br>
-        &bull; Acessar seus dados, podendo solicitá-los em uma cópia legível sob forma impressa ou por meio eletrônico,
-        seguro e idôneo.<br><br>
-        &bull; Corrigir seus dados, ao solicitar a edição, correção ou atualização destes.<br><br>
-        &bull; Limitar seus dados quando desnecessários, excessivos ou tratados em desconformidade com a legislação através
-        da anonimização, bloqueio ou eliminação.<br><br>
-        &bull; Solicitar a portabilidade de seus dados, através de um relatório de dados cadastrais que a GLASS trata a seu
-        respeito.<br><br>
-        &bull; Eliminar seus dados tratados a partir de seu consentimento, exceto nos casos previstos em lei.<br><br>
-        &bull; Revogar seu consentimento, desautorizando o tratamento de seus dados.<br><br>
-        &bull; Informar-se sobre a possibilidade de não fornecer seu consentimento e sobre as consequências da negativa.
-        <h4 class="mt-2">4. Como você pode exercer seus direitos de titular?</h4>
-        Para exercer seus direitos de titular, você deve entrar em contato com a GLASS através dos seguintes meios
-        disponíveis:<br><br>
-        &bull; Telefone: (11) 97851-2654<br>
-        &bull; Email: suporte@glasstecnologias.com<br>
-        <br>De forma a garantir a sua correta identificação como titular dos dados pessoais objeto da solicitação, é
-        possível que solicitemos documentos ou demais comprovações que possam comprovar sua identidade. Nessa hipótese, você
-        será informado previamente.<br>
-        <h4 class="mt-2">5. Como e por quanto tempo seus dados serão armazenados?</h4>
-        Seus dados pessoais coletados pela GLASS serão utilizados e armazenados durante o tempo necessário para a prestação
-        do serviço ou para que as finalidades elencadas na presente Política de Privacidade sejam atingidas, considerando os
-        direitos dos titulares dos dados e dos controladores.<br>
-        <br>
-        De modo geral, seus dados serão mantidos enquanto a relação contratual entre você e a GLASS perdurar. Findado o
-        período de armazenamento dos dados pessoais, estes serão excluídos de nossas bases de dados ou anonimizados,
-        ressalvadas as hipóteses legalmente previstas no artigo 16 lei geral de proteção de dados, a saber:<br>
-        <br>
-        I – cumprimento de obrigação legal ou regulatória pelo controlador;<br>
-        <br>
-        II – estudo por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais;<br>
-        <br>
-        III – transferência a terceiro, desde que respeitados os requisitos de tratamento de dados dispostos nesta Lei;
-        ou<br>
-        <br>
-        IV – uso exclusivo do controlador, vedado seu acesso por terceiro, e desde que anonimizados os dados.<br>
-        <br>
-        Isto é, informações pessoais sobre você que sejam imprescindíveis para o cumprimento de determinações legais,
-        judiciais e administrativas e/ou para o exercício do direito de defesa em processos judiciais e administrativos
-        serão mantidas, a despeito da exclusão dos demais dados.<br>
-        <br>
-        O armazenamento de dados coletados pela GLASS reflete o nosso compromisso com a segurança e privacidade dos seus
-        dados. Empregamos medidas e soluções técnicas de proteção aptas a garantir a confidencialidade, integridade e
-        inviolabilidade dos seus dados. Além disso, também contamos com medidas de segurança apropriadas aos riscos e com
-        controle de acesso às informações armazenadas.<br>
-        <h4 class="mt-2">6. O que fazemos para manter seus dados seguros?</h4>
-        Para mantermos suas informações pessoais seguras, usamos ferramentas físicas, eletrônicas e gerenciais orientadas
-        para a proteção da sua privacidade.<br>
-        <br>
-        Aplicamos essas ferramentas levando em consideração a natureza dos dados pessoais coletados, o contexto e a
-        finalidade do tratamento e os riscos que eventuais violações gerariam para os direitos e liberdades do titular dos
-        dados coletados e tratados.<br>
-        <br>
-        Entre as medidas que adotamos, destacamos as seguintes:<br>
-        <br>
-        &bull; Apenas pessoas autorizadas têm acesso a seus dados pessoais<br>
-        <br>
-        &bull; O acesso a seus dados pessoais é feito somente após o compromisso de confidencialidade<br>
-        <br>
-        &bull; Seus dados pessoais são armazenados em ambiente seguro e idôneo.<br>
-        <br>
-        A GLASS se compromete a adotar as melhores posturas para evitar incidentes de segurança. Contudo, é necessário
-        destacar que nenhuma página virtual é inteiramente segura e livre de riscos. É possível que, apesar de todos os
-        nossos protocolos de segurança, problemas de culpa exclusivamente de terceiros ocorram, como ataques cibernéticos de
-        hackers, ou também em decorrência da negligência ou imprudência do próprio parceiro.<br>
-        <br>
-        Em caso de incidentes de segurança que possa gerar risco ou dano relevante para você ou qualquer um de nossos
-        usuários/clientes, comunicaremos aos afetados e a Autoridade Nacional de Proteção de Dados sobre o ocorrido, em
-        consonância com as disposições da Lei Geral de Proteção de Dados.<br>
-        <h4 class="mt-2">7. Com quem seus dados podem ser compartilhados?</h4>
-        Tendo em vista a preservação de sua privacidade, a GLASS não compartilhará seus dados pessoais com nenhum terceiro
-        não autorizado. <br>
-        <br>
-        Seus dados poderão ser compartilhados com nossos parceiros comerciais: da Enterprise Assistant.<br>
-        <br>
-        Estes recebem seus dados apenas na medida do necessário para a prestação dos serviços contratados e nossos contratos
-        são orientados pelas normas de proteção de dados do ordenamento jurídico brasileiro.<br>
-        <br>
-        Todavia, nossos parceiros têm suas próprias Políticas de Privacidade, que podem divergir desta. Recomendamos a
-        leitura desses documentos.
-        <br>
-        Além disso, também existem outras hipóteses em que seus dados poderão ser compartilhados, que são:<br>
-        <br>
-        I – Determinação legal, requerimento, requisição ou ordem judicial, com autoridades judiciais, administrativas ou
-        governamentais competentes.<br>
-        <br>
-        II – Caso de movimentações societárias, como fusão, aquisição e incorporação, de forma automática<br>
-        <br>
-        III – Proteção dos direitos da GLASS em qualquer tipo de conflito, inclusive os de teor judicial.<br>
-        <h4 class="mt-2">8. Alteração desta Política de Privacidade</h4>
-        A atual versão da Política de Privacidade foi formulada e atualizada pela última vez em: 27/04/2021.<br>
-        <br>
-        Reservamos o direito de modificar essa Política de Privacidade a qualquer tempo, principalmente em função da
-        adequação a eventuais alterações feitas em nosso site ou em âmbito legislativo. Recomendamos que você a revise com
-        frequência.<br>
-        <br>
-        Eventuais alterações entrarão em vigor a partir de sua publicação em nosso site e sempre lhe notificaremos acerca
-        das mudanças ocorridas.<br>
-        <br>
-        Ao utilizar nossos serviços e fornecer seus dados pessoais após tais modificações, você as consente. <br>
-        <h4 class="mt-2">10. Responsabilidade</h4>
-        A GLASS prevê a responsabilidade dos agentes que atuam nos processos de tratamento de dados, em conformidade com os
-        artigos 42 ao 45 da Lei Geral de Proteção de Dados.<br>
-        <br>
-        Nos comprometemos em manter esta Política de Privacidade atualizada, observando suas disposições e zelando por seu
-        cumprimento.<br>
-        <br>
-        Além disso, também assumimos o compromisso de buscar condições técnicas e organizativas seguramente aptas a proteger
-        todo o processo de tratamento de dados.<br>
-        <br>
-        Caso a Autoridade Nacional de Proteção de Dados exija a adoção de providências em relação ao tratamento de dados
-        realizado pela GLASS, comprometemo-nos a segui-las. <br>
-        <h4 class="mt-2">10.1 Isenção de responsabilidade</h4>
-        A GLASS prevê a responsabilidade dos agentes que atuam nos processos de tratamento de dados, em conformidade com os
-        artigos 42 ao 45 da Lei Geral de Proteção de Dados.<br>
-        <br>
-        Nos comprometemos em manter esta Política de Privacidade atualizada, observando suas disposições e zelando por seu
-        cumprimento.<br>
-        <br>
-        Além disso, também assumimos o compromisso de buscar condições técnicas e organizativas seguramente aptas a proteger
-        todo o processo de tratamento de dados.<br>
-        <br>
-        Caso a Autoridade Nacional de Proteção de Dados exija a adoção de providências em relação ao tratamento de dados
-        realizado pela GLASS, comprometemo-nos a segui-las. <br>
-        <br>
-        <h4 class="mt-2">10.1 Isenção de responsabilidade</h4><br>
-        Conforme mencionado no Tópico 6, embora adotemos elevados padrões de segurança a fim de evitar incidentes, não há
-        nenhuma página virtual inteiramente livre de riscos. Nesse sentido, a GLASS não se responsabiliza por:<br>
-        <br>
-        I – Quaisquer consequências decorrentes da negligência, imprudência ou imperícia dos usuários em relação a seus
-        dados individuais. Garantimos e nos responsabilizamos apenas pela segurança dos processos de tratamento de dados e
-        do cumprimento das finalidades descritas no presente instrumento.<br>
-        <br>
-        Destacamos que a responsabilidade em relação à confidencialidade dos dados de acesso é do usuário.<br>
-        <br>
-        II – Ações maliciosas de terceiros, como ataques de hackers, exceto se comprovada conduta culposa ou deliberada da
-        GLASS.<br>
-        <br>
-        Destacamos que em caso de incidentes de segurança que possam gerar risco ou dano relevante para você ou qualquer um
-        de nossos usuários/clientes, comunicaremos aos afetados e a Autoridade Nacional de Proteção de Dados sobre o
-        ocorrido e cumpriremos as providências necessárias.<br>
-        <br>
-        III – Inveracidade das informações inseridas pelo usuário/cliente nos registros necessários para a utilização dos
-        serviços da GLASS; quaisquer consequências decorrentes de informações falsas ou inseridas de má-fé são de
-        inteiramente responsabilidade do usuário/cliente.<br>
-        Caso tenha dúvidas sobre esta Política de Privacidade ou sobre os dados pessoais que tratamos, você pode entrar em
-        contato com o nosso Encarregado de Proteção de Dados Pessoais, através dos seguintes canais:<br>
-        <br>
-        Email: suporte@glasstecnologias.com
+            <h4 class="text-center pilares-title">Saiba quais são os 8 pilares que uso para um briefing assertivo e um plano
+                de execução para desenvolver um projeto de valor e <u class="text-primary">RESULTADOS:</u></h4>
+            <div class="col-md-4">
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbspDetalhes do projeto;</h5>
+                <p id="m-a">Procuro entender todos os aspectos do seu projeto para um desenvolvimento otimizado.</p>
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbspDomínios registrados;</h5>
+                <p id="m-a">Recomendo sempre mais de um domínio e nomes que tenham a ver com o nicho: .com e .br (caso seja
+                    um novo sistema)</p>
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbspPlanejamento de tráfego;
+                </h5>
+                <p id="m-a">Devemos ter em mente que precisamos desenvolver meios de tráfego para que seu site tenha acesso,
+                    podendo ser por meio de SEO, redes sociais ou tráfego pago.</p>
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbsp5 principais problemas
+                    para resolver;</h5>
+                <p id="m-a">Analiso suas maiores necessidades, com nossa experiência a maioria deles são quase sempre atrair
+                    mais clientes, melhorar o atendimento, investir e obter resultado, vender mais, ficar a frente dos
+                    concorrentes.</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbsp3 principais concorrentes;
+                </h5>
+                <p id="m-a">Procuro os principais concorrentes do seu nicho, para o desenvolvimento de um projeto que seja
+                    único e não saia atrás no mercado.</p>
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbspReferência de mercado;
+                </h5>
+                <p id="m-a">Desenvolvo uma estratégia de briefing para que desenvolvamos um projeto não só que solucione
+                    seus problemas, mas que vire referência no mercado.</p>
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbspLista de email marketing;
+                </h5>
+                <p id="m-a">Analiso que frequência seria ideal para sua lista de emails, e que ferramentas usar, tendo como
+                    referência os concorrentes.</p>
+                <h5 class="pilares-subtitle"><i class="fas fa-check-circle text-primary"></i>&nbspLogo e padrão de cores;
+                </h5>
+                <p id="m-a">E por fim, mas não menos importante, a identidade visual do projeto baseado em psicologia das
+                    cores e formas que tenham conexão com o nicho.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h2 class="text-center text-light">Veja os depoimentos dos nossos clientes:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Daniela Martins</h5>
+                            <p>"Precisava de um site de roupas para expandir o meu negócio e o Lucas me ajudou muito criando
+                                um site com sistemas excepcionais integrados, já fechei mais de 2 negócios com ele"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Leonardo Castellani</h5>
+                            <p>"Sou Youtuber e precisava de um sistema para otimização dos meus roteiros, e o Lucas me
+                                ajudou muito nisso, criando um programa em que eu consigo definir toda trama dos meus textos
+                                de forma automatizada"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">João Victor</h5>
+                            <p>"Contratei o Lucas no intuito de que assumissem um cargo da minha equipe de TI, atualmente
+                                sou CTO de uma empresa de desenvolvimento e fiquei impressionado com o que foi entregue,
+                                muito mais do que o esperado, recomendo"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center justify-content-center my-4">
+        <h3>Vamos encontrar juntos a solução para seu negócio!</h3>
+        <i class="fas fa-hand-point-down text-primary fa-3x"></i><br />
+        <a href="https://api.whatsapp.com/send?phone=5511978512654"><button
+                class="my-2 btn btn-primary contatBtnIndex">QUERO SABER MAIS!</button></a>
     </div>
 
 @endsection

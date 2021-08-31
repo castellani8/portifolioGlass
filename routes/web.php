@@ -18,10 +18,11 @@ Route::get('/quemSomos', [\App\Http\Controllers\SiteController::class, 'quemSomo
 Route::get('/faleConosco', [\App\Http\Controllers\SiteController::class, 'faleConosco'])->name('faleConosco');
 Route::get('/projetos', [\App\Http\Controllers\SiteController::class, 'projetos'])->name('projetos');
 
-Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
+Route::get('/login', [\App\Http\Controllers\HomeController::class, 'index'])->name('login');
 
 Route::group(['middleware' => 'auth'], function() {
-
+    Route::get('painel', [\App\Http\Controllers\DashboardController::class, 'index'])->name('painel.index');
+    Route::resource('projects', \App\Http\Controllers\ProjectsController::class);
 });
 
 Auth::routes();
