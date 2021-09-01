@@ -25,7 +25,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('painel/profile/{id?}', [\App\Http\Controllers\DashboardController::class, 'profile'])->name('painel.profile');
     
     Route::resource('project', \App\Http\Controllers\ProjectController::class);
-    Route::resource('profile', \App\Http\Controllers\ProfileController::class);
+    Route::resource('user', \App\Http\Controllers\UserController::class);
 });
 
 Auth::routes();

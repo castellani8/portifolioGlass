@@ -17,17 +17,17 @@
                 </div>
             </div>
             <div class="col-6">
-                <label for="birth">Primeiro nome</label>
-                <input type="text" class="form-control" placeholder="Nome" value="{{ auth()->user()->name }}">
+                <label for="birth">Nome</label>
+                <input type="text" class="form-control" disabled value="{{ auth()->user()->name }}">
                 <br>
-                <label for="birth">Sobrenome</label>
-                <input type="text" class="form-control" placeholder="Sobrenome">
+                <label for="birth">Email</label>
+                <input type="email" class="form-control" disabled value="{{ auth()->user()->email }}">
                 <br>
                 <label for="birth">Data de nascimento</label>
                 <input name="birth" id="birth" type="date" class="form-control">
                 <br>
                 <label for="birth">Celular</label>
-                <input type="text" class="form-control" placeholder="">
+                <input name="phone" id="phone" type="text" class="form-control" placeholder="">
             </div>
         </div>
 
@@ -40,9 +40,9 @@
                 </label>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">https://github.com</span>
+                        <span class="input-group-text" id="github">https://github.com</span>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="github" name="github" aria-describedby="github">
                 </div>
             </div>
             <div class="col">
@@ -51,17 +51,20 @@
                 </label>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon3">https://linkedin.com</span>
+                        <span class="input-group-text" id="linkedin">https://linkedin.com</span>
                     </div>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="linkedin" name="linkedin" aria-describedby="linkedin">
                 </div>
             </div>
         </div>
 
         <div class="my-4">
             <h4>Resumo:</h4>
-            <textarea class="form-control" rows="5" cols="75" value=""></textarea>
+            <textarea name="resume" id="resume" class="form-control" rows="5" cols="75" value=""></textarea>
         </div>
+
+        <button type="submit" class="btn btn-md btn-primary"> Salvar informações</button>
+   
     </form>
 
 @endsection
