@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Str;
+
 
 class User extends Authenticatable
 {
@@ -21,7 +23,25 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'birth_date',
+        'phone',
+        'github',
+        'linkedin',
+        'resume',
     ];
+
+    public static function boot()
+    {
+        parent::boot();
+        self::creating(function ($model) {
+            $model->uuid = (string) Str::uuid();
+        });
+    }
+
+    public function getRouteKeyName()
+    {
+    return 'uuid';
+    }
 
     /**
      * The attributes that should be hidden for serialization.

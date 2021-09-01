@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\UserRequest;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -67,9 +69,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, User $user)
     {
-        //
+        $user->fill($request->validated())->save();
+        if($request->file('photo')){  $this->storeImage($request, $user); }
+        return redirect()->back()->with('message', 'Perfil salvo com sucesso');
     }
 
     /**
@@ -81,5 +85,12 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    private function storeImage($request, User $user)
+    {    
+        $user->image_url = $request->user()->uuid . '.' . $request->file('photo')->extension();
+        $request->file('photo')->storeAs('public/img/profiles', $user->image_url);
+        $user->save();
     }
 }

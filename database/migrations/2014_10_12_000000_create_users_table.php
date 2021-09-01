@@ -3,6 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
+
 
 class CreateUsersTable extends Migration
 {
@@ -15,12 +17,13 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
 
             $table->date('birth_date')->nullable();
-            $table->text('resume')->nullable();
+            $table->string('resume', 500)->nullable();
             $table->string('image_url')->nullable();
 
             $table->string('phone')->nullable()->unique();
