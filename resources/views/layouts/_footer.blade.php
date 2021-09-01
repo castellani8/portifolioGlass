@@ -1,4 +1,4 @@
-<div class="fixed-bottom">
+<div class="sticky-bottom position-fixed">
     <div class="container-fluid bg-dark">
         <div class="container">
             <div class="row justify-content text-center ">

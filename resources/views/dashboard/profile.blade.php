@@ -17,9 +17,17 @@
                 </div>
             </div>
             <div class="col-6">
-                <input type="text" class="form-control" placeholder="First name">
+                <label for="birth">Primeiro nome</label>
+                <input type="text" class="form-control" placeholder="Nome" value="{{ auth()->user()->name }}">
                 <br>
-                <input type="text" class="form-control" placeholder="Last name">
+                <label for="birth">Sobrenome</label>
+                <input type="text" class="form-control" placeholder="Sobrenome">
+                <br>
+                <label for="birth">Data de nascimento</label>
+                <input name="birth" id="birth" type="date" class="form-control">
+                <br>
+                <label for="birth">Celular</label>
+                <input type="text" class="form-control" placeholder="">
             </div>
         </div>
 
