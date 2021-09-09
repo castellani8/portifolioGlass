@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-3 bg-dark text-light">
                 <div class="my-5 text-center">
-                    <img src="{{ asset('storage/img/profiles/' . auth()->user()->image_url) }}" class="w-75 rounded my-3" alt="">
+                    <img src="{{ asset('storage/img/profiles/' . auth()->user()->image_url) }}" class="w-75 rounded-circle my-3" alt="">
                     <h5> Olá <br /> {{ auth()->user()->name }}</h5>
                     <br />
                     <a href="{{ route('painel.index') }}">

@@ -15,7 +15,7 @@
         @method('PUT')
         
         <div class="row my-2">
-            <div class="col-6 imgUp">
+            <div class="col-md-6 imgUp">
                 <div class="text-center">
                     <div class="imagePreview" style="width:30vh;height:30vh"></div>
                     <label class="btn btn-primary w-75 display-none">
@@ -29,7 +29,7 @@
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
-            <div class="col-6">
+            <div class="col-md-6">
                 <label for="name">Nome</label>
                 <input type="text" class="form-control" disabled value="{{ auth()->user()->name }}">
                 <br>
@@ -61,7 +61,7 @@
         <hr>
 
         <div class="row my-2">
-            <div class="col">
+            <div class="col-md-6">
                 <label for="basic-url">
                     <h4>Github</h4>
                 </label>
@@ -76,7 +76,7 @@
                 </span>
             @enderror
 
-            <div class="col">
+            <div class="col-md-6">
                 <label for="basic-url">
                     <h5>Linkedin</h5>
                 </label>
