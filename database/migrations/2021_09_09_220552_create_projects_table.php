@@ -15,10 +15,11 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 50)->nullable(false);
-            $table->string('description', 191)->nullable(false);
-            $table->string('url')->nullable(false);
-            $table->string('image')->nullable(false);
+            $table->uuid('uuid');
+            $table->string('title');
+            $table->string('description');
+            $table->string('image')->nullable();
+            $table->string('link');
             $table->timestamps();
         });
     }
