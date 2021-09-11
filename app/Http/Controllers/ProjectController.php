@@ -38,8 +38,7 @@ class ProjectController extends Controller
     {
         $project->fill($request->validated())->save();
         if($request->file('photo')){  $this->storeImage($request, $project); }
-        return redirect()->back()->with('message', 'Projeto adicionado com sucesso');
-        
+        return redirect()->back()->with('message', 'Projeto adicionado com sucesso');   
     }
 
     /**
@@ -59,9 +58,9 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Project $project)
     {
-        //
+        return view('dashboard.project.create', ['project' => $project]);
     }
 
     /**
@@ -71,9 +70,11 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ProjectRequest $request, Project $project)
     {
-        //
+        $project->fill($request->validated())->save();
+        if($request->file('photo')){  $this->storeImage($request, $project); }
+        return redirect()->back()->with('message', 'Projeto atualizado com sucesso'); 
     }
 
     /**

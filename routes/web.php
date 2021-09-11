@@ -21,8 +21,10 @@ Route::get('/projetos', [\App\Http\Controllers\SiteController::class, 'projetos'
 Route::get('/login', [\App\Http\Controllers\HomeController::class, 'index'])->name('login');
 
 Route::group(['middleware' => 'auth'], function() {
+    
     Route::get('painel', [\App\Http\Controllers\DashboardController::class, 'index'])->name('painel.index');
     Route::get('painel/profile/{user?}', [\App\Http\Controllers\DashboardController::class, 'profile'])->name('painel.profile');
+    Route::get('painel/project/{project?}', [\App\Http\Controllers\DashboardController::class, 'project'])->name('painel.project');
     
     Route::resource('project', \App\Http\Controllers\ProjectController::class);
     Route::resource('user', \App\Http\Controllers\UserController::class);

@@ -14,6 +14,11 @@ class DashboardController extends Controller
 
     public function profile()
     {
-        return view('dashboard.profile');
+        return view('dashboard.profile.profile');
+    }
+
+    public function project()
+    {
+        return view('dashboard.project.index', ['projects' => Project::all() ?? null]);
     }
 }

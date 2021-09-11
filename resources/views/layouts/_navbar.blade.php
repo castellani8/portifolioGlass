@@ -26,7 +26,7 @@
                 <div class='divider-vertical d-lg-block d-none my-auto'></div>
                 @if(auth()->check())
                     <li class='nav-item'>
-                        <a class='nav-link letter-g' href="{{ route('painel.index') }}"> Olá {{ auth()->user()->name }} !</a>
+                        <a class='nav-link letter-g' href="{{ route('painel.index') }}"> Olá {{ auth()->user()->name }}!</a>
                     </li>
                 @else
                     <li class='nav-item'>

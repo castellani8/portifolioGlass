@@ -20,7 +20,7 @@
                         <button type="button" class="btn btn-dark btn-block">Mensagens</button>
                     </a><br />
 
-                    <a href="{{ route('painel.profile') }}">
+                    <a href="{{ route('painel.project') }}">
                         <button type="button" class="btn btn-dark btn-block">Projetos</button>
                     </a><br />
 

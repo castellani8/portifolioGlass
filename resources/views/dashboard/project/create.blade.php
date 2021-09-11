@@ -9,13 +9,14 @@
         </div>
     @endif
     <hr class="my-4">
-    <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ isset($project) ? route('project.update', ['project' => $project]) : route('project.store', ['project' => $project]) }}" method="POST" enctype="multipart/form-data">
+        @if(isset($project)) @method('PUT') @endif     
         @csrf
         <div class="form-group">
             <div class="row">
                 <div class="col-md-6 imgUp justify-content-center">
                     <div class="text-center">
-                        <div class="imagePreview" style="width:30vh;height:30vh"></div>
+                        <div class="imagePreview w-75" style="width:30vh;height:30vh;background-image:url('{{ isset($project) ? asset('storage/img/projects/' . $project->image_url) : '' }}')"></div>
                         <label class="btn btn-primary w-75 display-none">
                             Upload<input type="file" name="photo" id="photo"
                                 class="uploadFile img justify-content-center content-center" value="Upload Photo"
@@ -34,7 +35,7 @@
                             <span class="input-group-text" id="title">Título</span>
                         </div>
                         <input type="text" class="form-control px-1" id="title" name="title" placeholder="Titulo"
-                            aria-describedby="title" required>
+                            aria-describedby="title" value="{{ isset($project) ? $project->title : old('title') }}" required>
                         @error('title')
                             <span class=" ">
                                 <strong>{{ $message }}</strong>
@@ -47,7 +48,8 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="link">Link</span>
                         </div>
-                        <input type="text" class="form-control px-1" id="link" name="link" placeholder="Link" required>
+                        <input type="text" class="form-control px-1" id="link" name="link" placeholder="Link" 
+                            value="{{ isset($project) ? $project->link : old('link') }}" required>
                         @error('link')
                             <span class="invalid">
                                 <strong>{{ $message }}</strong>
@@ -61,18 +63,18 @@
                             <span class="input-group-text" id="description">Descrição</span>
                         </div>
                         <textarea cols="30" rows="6" type="text" class="form-control" id="description" name="description"
-                            placeholder="Descrição" required></textarea>
-                        @error('description')
-                            <span class="invalid">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
+                            placeholder="Descrição" required>{{ isset($project) ? $project->description : old('description') }}</textarea>
                     </div>
+                    @error('description')
+                        <span class="invalid text-danger">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
             </div>
             <hr>
             <br>
-            <button type="submit" class="text-center">salvar</button>
+            <button type="submit" class="text-center btn btn-success btn-lg">salvar</button>
             <br>
         </div>
     </form>
