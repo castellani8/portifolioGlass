@@ -18,7 +18,7 @@ class CreateProjectsTable extends Migration
             $table->uuid('uuid');
             $table->string('title');
             $table->string('description');
-            $table->string('image')->nullable();
+            $table->string('image_url')->nullable();
             $table->string('link')->nullable();
             $table->timestamps();
         });

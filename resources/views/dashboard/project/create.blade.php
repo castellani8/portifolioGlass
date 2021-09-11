@@ -3,8 +3,13 @@
 
 
     <h1 class="text-center my-4 display-3">Adicionar novo projeto</h1>
+    @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+    @endif
     <hr class="my-4">
-    <form action="{{ route('project.store') }}" method="POST">
+    <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <div class="row">
@@ -16,15 +21,25 @@
                                 class="uploadFile img justify-content-center content-center" value="Upload Photo"
                                 style="width: 0px;height: 0px;overflow: hidden;">
                         </label>
+                        @error('photo')
+                            <span class="invalid">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                 </div>
-                <div class="col-md-6"> 
+                <div class="col-md-6">
                     <div class="input-group input-group-lg">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="title">Título</span>
                         </div>
-                        <input type="text" class="form-control px-1" id="title" placeholder="Titulo"
+                        <input type="text" class="form-control px-1" id="title" name="title" placeholder="Titulo"
                             aria-describedby="title" required>
+                        @error('title')
+                            <span class=" ">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <br>
                     <br>
@@ -32,7 +47,12 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="link">Link</span>
                         </div>
-                        <input type="text" class="form-control px-1" id="link" placeholder="Link" required>
+                        <input type="text" class="form-control px-1" id="link" name="link" placeholder="Link" required>
+                        @error('link')
+                            <span class="invalid">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <br>
                     <br>
@@ -40,13 +60,19 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="description">Descrição</span>
                         </div>
-                        <textarea cols="30" rows="6" type="text" class="form-control" id="description"
+                        <textarea cols="30" rows="6" type="text" class="form-control" id="description" name="description"
                             placeholder="Descrição" required></textarea>
+                        @error('description')
+                            <span class="invalid">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                 </div>
             </div>
             <hr>
             <br>
+            <button type="submit" class="text-center">salvar</button>
             <br>
         </div>
     </form>
