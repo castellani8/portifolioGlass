@@ -13,7 +13,7 @@ class ProjectRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return auth()->check();
     }
 
     /**
@@ -24,7 +24,10 @@ class ProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title'       => 'required',
+            'link'        => 'nullable',
+            'description' => 'required',
+            'photo'       => 'nullable|image|mimes:jpeg,png,jpg',
         ];
     }
 }
