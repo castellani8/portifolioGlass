@@ -25,7 +25,7 @@ class ProjectRequest extends FormRequest
     {
         return [
             'title'       => 'required',
-            'link'        => 'nullable',
+            'link'        => 'nullable|url',
             'description' => 'required|max:150',
             'photo'       => 'nullable|image|mimes:jpeg,png,jpg',
         ];

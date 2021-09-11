@@ -73,7 +73,7 @@
                 </div>
             </div>
             <hr>
-            <br>
+            <a href="{{ url()->previous() }}" class="text-center btn btn-warning btn-lg">Voltar</a>
             <button type="submit" class="text-center btn btn-success btn-lg">salvar</button>
             <br>
         </div>
