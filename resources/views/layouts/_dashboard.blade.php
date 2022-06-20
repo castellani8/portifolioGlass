@@ -3,14 +3,14 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 bg-dark text-light">
+            <div class="col-md-2 text-dark">
                 <div class="my-5 text-center">
                     <img src="{{ asset('storage/img/profiles/' . auth()->user()->image_url) }}" class="w-50 rounded-circle my-3" alt="">
                     <h5> Olá <br /> {{ auth()->user()->name }}</h5>
                     <br />
 
-                    <a href="{{ route('painel.index') }}">
-                        <button type="button" class="btn btn-secondary btn-block">Painel</button>
+                    <a href="{{ route('painel.evolution') }}">
+                        <button type="button" class="btn btn-secondary btn-block">Evolução</button>
                     </a><br />
 
                     <a href="{{ route('painel.profile') }}">
@@ -31,7 +31,7 @@
                     </a><br />
                 </div>
             </div>
-            <div class="col-md-9 bg-light">
+            <div class="col-md-10 bg-light">
                 <div>
                     @yield('dashboard')
                 </div>

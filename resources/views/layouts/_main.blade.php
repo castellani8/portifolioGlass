@@ -23,6 +23,7 @@
     <title>Document</title>
 </head>
 <body style="margin: 0;padding:0;">
+    
     <header>
         @include('layouts._navbar')
     </header>

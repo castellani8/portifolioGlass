@@ -23,6 +23,7 @@ Route::get('/login', [\App\Http\Controllers\HomeController::class, 'index'])->na
 Route::group(['middleware' => 'auth'], function() {
     
     Route::get('painel', [\App\Http\Controllers\DashboardController::class, 'index'])->name('painel.index');
+    Route::get('evolution', [\App\Http\Controllers\DashboardController::class, 'evolution'])->name('painel.evolution');
     Route::get('painel/profile/{user?}', [\App\Http\Controllers\DashboardController::class, 'profile'])->name('painel.profile');
     Route::get('painel/project/{project?}', [\App\Http\Controllers\DashboardController::class, 'project'])->name('painel.project');
     

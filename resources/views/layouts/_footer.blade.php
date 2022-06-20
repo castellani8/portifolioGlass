@@ -1,4 +1,4 @@
-<div class="container-fluid"  style="margin: 0;padding:0;">
+<div class="container-fluid fixed-bottom"  style="margin: 0;padding:0;">
     <div class=" bg-dark">
             <div class="row justify-content text-center ">
                 <div class="col-md-4">
