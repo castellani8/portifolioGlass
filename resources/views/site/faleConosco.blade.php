@@ -1,4 +1,4 @@
-@extends('layouts._header')
+@extends('layouts._main')
 @section('content')
 
     <div class="container-fluid header" style="background-image: url('{{ url('/img/background2.png') }}');">

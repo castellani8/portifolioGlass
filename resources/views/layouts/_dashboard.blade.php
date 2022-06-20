@@ -1,9 +1,9 @@
-@extends('layouts._header')
+@extends('layouts._main')
 @section('content')
 
-    <div class="container-fluid mb-5 mt-1">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 bg-dark text-light">
+            <div class="col-md-3 bg-primary text-light">
                 <div class="my-5 text-center">
                     <img src="{{ asset('storage/img/profiles/' . auth()->user()->image_url) }}" class="w-50 rounded-circle my-3" alt="">
                     <h5> Olá <br /> {{ auth()->user()->name }}</h5>
@@ -31,7 +31,7 @@
                     </a><br />
                 </div>
             </div>
-            <div class="col-md-9 bg-light my-5">
+            <div class="col-md-9 bg-light">
                 <div>
                     @yield('dashboard')
                 </div>

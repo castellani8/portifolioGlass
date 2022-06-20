@@ -1,7 +1,7 @@
 @extends('layouts._dashboard')
 @section('dashboard')
 
-    <div class="border rounded p-3 row">
+    <div class="border rounded row">
         @forelse ($projects as $project)
             <div class="card col-md-3" style="height: 20rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
@@ -34,8 +34,6 @@
                 </a>
             </div>
         </div>
-    </div>
-
-
+    </div
 
 @endsection

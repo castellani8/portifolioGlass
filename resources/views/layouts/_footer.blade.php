@@ -1,5 +1,5 @@
-<div class="sticky-bottom position-fixed">
-    <div class="container-fluid bg-dark">
+<div class="sticky-bottom position-fixed container-fluid">
+    <div class=" bg-dark">
         <div class="container">
             <div class="row justify-content text-center ">
                 <div class="col-lg-4">
