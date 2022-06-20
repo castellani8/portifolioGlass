@@ -22,16 +22,14 @@
     <link rel="stylesheet" href="{{ asset('css/dashboard/styles.css') }}">
     <title>Document</title>
 </head>
-<body>
+<body style="margin: 0;padding:0;">
     <header>
         @include('layouts._navbar')
     </header>
 
     @yield('content')
 
-    <div>
-        @include('layouts._footer')
-    </div>
+    @include('layouts._footer')
 
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/site/scripts.js') }}"></script>
