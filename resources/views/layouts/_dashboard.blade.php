@@ -3,31 +3,31 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 bg-primary text-light">
+            <div class="col-md-3 bg-dark text-light">
                 <div class="my-5 text-center">
                     <img src="{{ asset('storage/img/profiles/' . auth()->user()->image_url) }}" class="w-50 rounded-circle my-3" alt="">
                     <h5> Olá <br /> {{ auth()->user()->name }}</h5>
                     <br />
 
                     <a href="{{ route('painel.index') }}">
-                        <button type="button" class="btn btn-dark btn-block">Painel</button>
+                        <button type="button" class="btn btn-secondary btn-block">Painel</button>
                     </a><br />
 
                     <a href="{{ route('painel.profile') }}">
-                        <button type="button" class="btn btn-dark btn-block">Perfil</button>
+                        <button type="button" class="btn btn-secondary btn-block">Perfil</button>
                     </a><br />
 
-                        <button type="button" class="btn btn-dark btn-block">Mensagens</button>
+                        <button type="button" class="btn btn-secondary btn-block">Mensagens</button>
                     </a><br />
 
                     <a href="{{ route('painel.project') }}">
-                        <button type="button" class="btn btn-dark btn-block">Projetos</button>
+                        <button type="button" class="btn btn-secondary btn-block">Projetos</button>
                     </a><br />
 
-                    <button type="button" class="btn btn-dark btn-block">Configurações</button><br />
+                    <button type="button" class="btn btn-secondary btn-block">Configurações</button><br />
 
                     <a href="{{ route('logout') }}">
-                        <button type="button" class="btn btn-dark btn-block">Logout</button>
+                        <button type="button" class="btn btn-secondary btn-block">Logout</button>
                     </a><br />
                 </div>
             </div>
